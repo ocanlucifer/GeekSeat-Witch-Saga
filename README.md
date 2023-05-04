@@ -8,6 +8,12 @@
     - Place project on "htdocs" folder
     - access on browser with "server_ip/GeekSeat-Witch-Saga"
 
+# Run Unit Test:
+
+    - Open Terminal / Commmand Prompt / Power Shell
+    - go to Project Folder
+    - run this command: ./vendor/bin/phpunit --bootstrap vendor/autoload.php Test.php
+
 # The story: Geekseat Witch Saga: Return of The Coder!
 
 Somewhere far far away, there is a village which is controlled by a dark and cunning witch.
