@@ -36,21 +36,22 @@ solve this problem:
     If given two people whose age of death and year of death are known, find the average number of
     people the witch killed on year of birth of those people
     Example:
-    Given:
-    Person A: Age of death = 10, Year of Death = 12
-    Person B: Age of death = 13, Year of Death = 17
-    Answer:
-    Person A born on Year = 12 – 10 = 2, number of people killed on year 2 is 2.
-    Person B born on Year = 17 – 13 = 4, number of people killed on year 4 is 7.
-    So the average is ( 7 + 2 )/2 = 4.5
-    If you give invalid data (i.e. negative age, person who born before the witch took control) the
-    program should return -1.
-    So, if a villager who can create a program to solve the problem, the witch will leave, and the killing
-    will be stopped.
-    There was one programmer who was able to solve the problem, but the witch did not like the code
-    because the code was messy and make her angry.
-    She then proceeded to kill the programmer. Now the villagers know that they also need to make the
-    code clean and structured.
+        Given:
+            Person A: Age of death = 10, Year of Death = 12
+            Person B: Age of death = 13, Year of Death = 17
+        Answer:
+            Person A born on Year = 12 – 10 = 2, number of people killed on year 2 is 2.
+            Person B born on Year = 17 – 13 = 4, number of people killed on year 4 is 7.
+            So the average is ( 7 + 2 )/2 = 4.5
+        If you give invalid data (i.e. negative age, person who born before the witch took control) the
+        program should return -1.
+
+So, if a villager who can create a program to solve the problem, the witch will leave, and the killing will be stopped.
+
+There was one programmer who was able to solve the problem, but the witch did not like the code
+because the code was messy and make her angry.
+She then proceeded to kill the programmer. Now the villagers know that they also need to make the
+code clean and structured.
 
 Now I'm asked by the villager to make the code by previous programmer cleaner and beautifully
 structured.
