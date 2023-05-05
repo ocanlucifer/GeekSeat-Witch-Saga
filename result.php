@@ -33,23 +33,42 @@
                 GeekSeat::Witch Saga
             </div>
             <div class="card-body">
-                <div class="card mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Person 1</h5>
-                        <p class="card-text">Born on Year: <strong><?= $year_p1; ?></strong> – <strong><?= $age_p1; ?></strong> = <strong><?= $val1; ?></strong>, number of people killed on year <strong><?= $val1; ?></strong> is <strong><?= $p1; ?></strong>.</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="card mb-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Person 1 <?= $p1 < 0 ? '<strong>invalid data</strong>' : ''; ?></h5>
+                                <p class="card-text">Born on Year: <strong><?= $year_p1; ?></strong> – <strong><?= $age_p1; ?></strong> = <strong><?= $val1; ?></strong>, number of people killed on year <strong><?= $val1; ?></strong> is <strong><?= $p1; ?></strong>.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Person 2 <?= $p2 < 0 ? '<strong>invalid data</strong>' : ''; ?></h5>
+                                <p class="card-text">Born on Year: <strong><?= $year_p2; ?></strong> – <strong><?= $age_p2; ?></strong> = <strong><?= $val2; ?></strong>, number of people killed on year <strong><?= $val2; ?></strong> is <strong><?= $p2; ?></strong>.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Average <?= $avg < 0 ? '<strong>invalid data</strong>' : ''; ?></h5>
+                                <p class="card-text">So the average is ( <strong><?= $p1; ?></strong> + <strong><?= $p2; ?></strong> )/2 = <strong><?= $avg; ?></strong></p>
+                                <a href="javascript: history.back()" class="card-link">Back</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Person 2</h5>
-                        <p class="card-text">Born on Year: <strong><?= $year_p2; ?></strong> – <strong><?= $age_p2; ?></strong> = <strong><?= $val2; ?></strong>, number of people killed on year <strong><?= $val2; ?></strong> is <strong><?= $p2; ?></strong>.</p>
-                    </div>
-                </div>
-                <div class="card mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Average</h5>
-                        <p class="card-text">So the average is ( <strong><?= $p1; ?></strong> + <strong><?= $p2; ?></strong> )/2 = <strong><?= $avg; ?></strong></p>
-                        <a href="javascript: history.back()" class="card-link">Back</a>
+                    <div class="col">
+                        <p class="card-text">
+                            rule to decide the number of villagers
+                            she should kill each year.
+
+                        <ul>
+                            <li>the 1st year she kills 1 villager</li>
+                            <li>On the 2nd year she kills 1 + 1 = 2 villagers</li>
+                            <li>On the 3rd year she kills 1 + 1 + 2 = 4 villagers</li>
+                            <li>On the 4th year she kills 1 + 1 + 2 + 3 = 7 villagers</li>
+                            <li>On the 5th year she kills 1 + 1 + 2 + 3 + 5 = 12 villagers</li>
+                            <li>And so on...</li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
             </div>
