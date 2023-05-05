@@ -18,7 +18,7 @@
                 GeekSeat::Witch Saga
             </div>
             <div class="card-body">
-                <form method="POST" action="result.php" enctype="multipart/form-data">
+                <form method="POST" action="result.php">
                     <div class="row">
                         <div class="col">
                             <div class="form-floating mb-3">
